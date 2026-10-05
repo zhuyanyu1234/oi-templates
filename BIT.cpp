@@ -30,7 +30,8 @@ class BIT {     // 单改区查
     }
     int query(int l, int r) { return prefix(r) - prefix(l - 1); }
     BIT(const std::vector<int> &a) { // a[1]为第一个元素, a[0]不使用
-        if(a.empty())BIT(0);
+        if (a.empty())
+            BIT(0);
         n = (int)a.size() - 1;
         c.resize(n + 5, 0);
         for (int i = 1; i <= n; i++) { // O(n) 建树
