@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 namespace UnionSet { // 并查集
 class UnionSet {     // 路径压缩
